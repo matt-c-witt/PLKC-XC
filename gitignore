@@ -1,0 +1,8 @@
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.netlify/
+
+# Nothing else to ignore: this is one static HTML file with no build
+# output, no dependencies, and no secrets.

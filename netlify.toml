@@ -1,0 +1,15 @@
+# Static site: no build step. Netlify serves this folder as-is.
+[build]
+  publish = "."
+
+# Always check for a fresh copy of the page, so new results show up
+# as soon as an update is deployed (no stale cached version).
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
